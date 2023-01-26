@@ -1,0 +1,126 @@
+/* Importing Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap");
+
+/* Reset CSS */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Custom Properties */
+:root {
+  /**
+    Typography
+    */
+
+  /* font-family*/
+  --ff-roboto: "Roboto", sans-serif;
+
+  /* font-size */
+  --fs-32: 32px;
+  --fs-24: 24px;
+  --fs-20: 20px;
+  --fs-16: 16px;
+  --fs-14: 14px;
+  --fs-12: 12px;
+
+  /* font-weight */
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+
+  /**
+    Colors
+    */
+  --white: rgb(255, 255, 255);
+  --light-purple: rgb(232, 230, 248);
+  --dark-purple: rgb(100, 76, 238);
+  --light-green: rgb(9, 181, 0);
+  --dark-green: rgb(11, 148, 4);
+  --light-gray: rgb(205, 205, 205);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+}
+
+.heading-container {
+  width: 50%;
+  font-size: 72px;
+  font-weight: var(--fw-600);
+  color: var(--dark-purple);
+  text-align: center;
+}
+
+/** 
+Calculator Container 
+*/
+.calculator-container {
+  width: 50%;
+  background-color: var(--white);
+}
+
+/* Seperator */
+.seperator {
+  width: 280px;
+  border: 1px solid var(--light-gray);
+  border-radius: 15px;
+}
+
+/* Buttons */
+.button {
+  width: 66px;
+  padding: 20px;
+  margin: 0 3px;
+  border: 0px solid;
+  border-radius: 9px;
+  background-color: rgb(232, 230, 248);
+  cursor: pointer;
+  font-size: 32px;
+  font-family: roboto;
+  color: rgb(100, 76, 238);
+}
+
+#clear-button {
+  width: 142px;
+  color: rgb(255, 0, 0);
+}
+#zero-button {
+  width: 142px;
+}
+#equalto-button {
+  background-color: rgb(9, 181, 0);
+  color: var(--white);
+}
+#operator-button {
+  color: rgb(11, 148, 4);
+}
+
+/* Row */
+.row {
+  margin: 8px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Input */
+.row .input {
+  width: 280px;
+  padding: 10px 10px;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 32px;
+  font-family: roboto;
+  color: rgb(100, 76, 238);
+}
+
+.row .input:focus {
+  outline: none;
+}
